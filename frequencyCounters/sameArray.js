@@ -38,12 +38,14 @@ function sameSquaredArray(array1, array2) {
   if not, return false. If it does exist,
   check if the counts match */
 
-  for (const key of fc1) {
-    if (!(key ** 2 in fc2)) {
-      return false;
-    }
-    if (fc1[key] !== fc2[key ** 2]) {
-      return false;
+  for (const key in fc1) {
+    if ({}.hasOwnProperty.call(fc1, key)) {
+      if (!(key ** 2 in fc2)) {
+        return false;
+      }
+      if (fc1[key] !== fc2[key ** 2]) {
+        return false;
+      }
     }
   }
   return true;

@@ -26,12 +26,14 @@ function simpleAnagram(str1, str2) {
     fc2[value] = (fc2[value] || 0) + 1;
   }
 
-  for (const key of fc1) {
-    if (!(key in fc2)) {
-      return false;
-    }
-    if (fc1[key] !== fc2[key]) {
-      return false;
+  for (const key in fc1) {
+    if ({}.hasOwnProperty.call(fc1, key)) {
+      if (!(key in fc2)) {
+        return false;
+      }
+      if (fc1[key] !== fc2[key]) {
+        return false;
+      }
     }
   }
   return true;

@@ -9,7 +9,7 @@ function duplicateArguments(...args) {
   }
   // Loop through arguments, adding to map, init to zero if doesn't exist
   for (const val of args) {
-    map[args[val]] = (map[args[val]] || 0) + 1;
+    map[val] = (map[val] || 0) + 1;
   }
 
   for (const key in map) {
@@ -25,4 +25,6 @@ function duplicateArguments(...args) {
 function duplicateArgumentsSet(...args) {
   return new Set(args).size !== args.length;
 }
+
+console.log(duplicateArguments(1, 2, 3, 5, 9, 10));
 module.exports = { duplicateArguments, duplicateArgumentsSet };
