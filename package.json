@@ -1,0 +1,24 @@
+{
+  "name": "jsalgorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swillie/JSAlgorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swillie/JSAlgorithms/issues"
+  },
+  "homepage": "https://github.com/swillie/JSAlgorithms#readme",
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^27.3.1"
+  }
+}
