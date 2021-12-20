@@ -12,5 +12,4 @@ function capitalizeFirst(arr) {
   return arr.concat(capitalizeFirst(arr.slice(1)));
 }
 
-console.log(capitalizeFirst(['cat', 'dog', 'bird']));
 module.exports = capitalizeFirst;

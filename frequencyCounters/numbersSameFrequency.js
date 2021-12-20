@@ -24,6 +24,4 @@ function numbersSameFrequency(num1, num2) {
   return false;
 }
 
-console.log(numbersSameFrequency(1, 1));
-
 module.exports = numbersSameFrequency;

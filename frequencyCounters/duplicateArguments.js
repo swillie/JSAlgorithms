@@ -26,5 +26,4 @@ function duplicateArgumentsSet(...args) {
   return new Set(args).size !== args.length;
 }
 
-console.log(duplicateArguments(1, 2, 3, 5, 9, 10));
 module.exports = { duplicateArguments, duplicateArgumentsSet };

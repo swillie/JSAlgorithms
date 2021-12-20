@@ -9,6 +9,4 @@ function reverse(str) {
   return reverse(str.substring(1)) + str[0];
 }
 
-console.log(reverse('awesome'));
-
 module.exports = reverse;

@@ -29,5 +29,4 @@ function minSubArrayLength(arr, sum) {
   return min === Infinity ? 0 : min;
 }
 
-console.log(minSubArrayLength([2, 3, 1, 2, 4, 3], 7));
 module.exports = minSubArrayLength;
